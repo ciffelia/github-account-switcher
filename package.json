@@ -3,5 +3,13 @@
   "version": "0.0.1",
   "repository": "https://github.com/prince0203/github-account-switcher.git",
   "author": "prince0203 <mc.prince.0203@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "uglify-js": "mishoo/UglifyJS2#harmony",
+    "uglify-save-license": "^0.4.1",
+    "uglifyjs-webpack-plugin": "^0.4.0",
+    "webpack": "^2.3.2"
+  }
 }
