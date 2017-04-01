@@ -10,4 +10,4 @@ before_script:
   - yarn
 
 script:
-  - yarn run webpack
+  - yarn run webpack:prod

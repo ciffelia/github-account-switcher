@@ -1,15 +1,26 @@
 {
   "name": "github-account-switcher",
   "version": "0.0.1",
-  "repository": "https://github.com/prince0203/github-account-switcher.git",
   "author": "prince0203 <mc.prince.0203@gmail.com>",
+  "repository": "https://github.com/prince0203/github-account-switcher.git",
   "license": "MIT",
+  "scripts": {
+    "webpack:dev": "webpack --config webpack.config.dev.js",
+    "webpack:watch": "webpack --config webpack.config.dev.js --watch",
+    "webpack:prod": "webpack --config webpack.config.prod.js"
+  },
   "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^4.0.1",
     "uglify-js": "mishoo/UglifyJS2#harmony",
     "uglify-save-license": "^0.4.1",
-    "uglifyjs-webpack-plugin": "^0.4.0",
     "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
