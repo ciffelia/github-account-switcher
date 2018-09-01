@@ -11,5 +11,11 @@
     "default_popup": "index.html"
   },
   
-  "permissions": ["cookies"]
+  "permissions": [
+    "storage",
+    "cookies",
+    "https://github.com/"
+  ],
+  
+  "minimum_chrome_version": "55"
 }

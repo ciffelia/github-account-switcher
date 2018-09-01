@@ -5,22 +5,26 @@
   "repository": "https://github.com/prince0203/github-account-switcher.git",
   "license": "MIT",
   "scripts": {
-    "webpack:dev": "webpack --config webpack.config.dev.js",
-    "webpack:watch": "webpack --config webpack.config.dev.js --watch",
-    "webpack:prod": "webpack --config webpack.config.prod.js"
+    "webpack:dev": "webpack",
+    "webpack:watch": "webpack --watch",
+    "webpack:prod": "cross-env NODE_ENV=production webpack"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babili-webpack-plugin": "^0.0.11",
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^4.0.1",
-    "uglify-js": "mishoo/UglifyJS2#harmony",
-    "uglify-save-license": "^0.4.1",
+    "cross-env": "^4.0.0",
     "webpack": "^2.3.2"
   },
   "dependencies": {
+    "material-ui": "^0.17.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-tap-event-plugin": "^2.0.1"
   }
 }
